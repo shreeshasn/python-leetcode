@@ -1,0 +1,9 @@
+n=int(input()) #input n for pattern
+for i in range(1,n+1):
+    j=1
+    res=0
+    while j<=i:
+        res=res+j*pow(10,j-1) # calculates result in reverse way
+        j=j+1
+    print(res) # prints pattern
+
