@@ -1,0 +1,6 @@
+for i in range(1,int(input()):
+    res, k=0, 0
+    while k<i:
+        res=res+i*pow(10,k)
+        k=k+1
+    print(res)
