@@ -1,0 +1,17 @@
+x=int(input())
+if x%10 == 0:
+  new = x/10
+  str1 = str(x)
+  str1 = str1[::-1]
+  newx= int(str1)
+elif x < 0:
+  x = x - 2*x
+  str2=str(x)
+  str2= str2[::-1]
+  modx= int(str2)
+  newx= modx - 2*modx
+else:
+  str3=str(x)
+  str3=str3[::-1]
+  newx=int(str3)
+print(newx)
