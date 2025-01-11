@@ -1,0 +1,14 @@
+nums=[2,0,1,1,2,0,2,1,0]    #assuming 0:red 1:blue 2:green
+#sorting without using sort()
+for i in nums:
+  if i==0:
+    nums.append(i)
+    nums.remove(i)
+for j in nums:
+  if j==1:
+    nums.append(j)
+    nums.remove(j)
+for k in nums:
+  if k==2:
+    nums.append(k)
+    nums.remove(k)
