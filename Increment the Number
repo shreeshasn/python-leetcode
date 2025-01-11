@@ -1,0 +1,12 @@
+digits=[]
+n=int(input('enter the total no of digits in the number'))
+for i in range(n):
+  m=int(input())
+  digits.append(m)
+sum=0
+for j in digits:
+  sum=sum*10+j
+sum=sum+1        #plus one 1356 results to 1357
+res = [int(x) for x in str(sum)]     #convert the number 1357 to list
+print(sum)    #print the number in integer form
+print(res)  #print the new list
