@@ -5,7 +5,7 @@ class Solution(object):
         :type ch: str
         :rtype: str
         """
-        rem,s="",""
+        s=""
         if ch not in word:
             return word
         ind=word.index(ch)+1
