@@ -1,0 +1,14 @@
+class Solution(object):
+    def addDigits(self, num):
+        """
+        :type num: int
+        :rtype: int
+        """
+        while num>=0:
+            if num<=9:
+                return num
+            else:
+                sum=0
+                for i in str(num):
+                    sum+=int(i)
+                num=sum
