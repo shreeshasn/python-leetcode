@@ -1,0 +1,16 @@
+class Solution(object):
+    def isPrefixOfWord(self, sentence, searchWord):
+        """
+        :type sentence: str
+        :type searchWord: str
+        :rtype: int
+        """
+        t=""
+        l=sentence.split(" ")
+        ls=len(searchWord)
+        for i in l:
+            t=i[:ls]
+            if searchWord==t:
+                return l.index(i)+1
+        else:
+            return -1
